@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    font-family: Elms Sans;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+  background-color: gray;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav h1 {
+    color: #e5e5e5;
+    margin: 10px 0;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+nav a {
+    font-size: 25px;
+    font-weight: 200;
+    padding: 3px 6px;
+    border-radius: 7px;
+    color: #e5e5e5;
+    text-decoration: none;
+    background-color: gray;
+}
+
+main {
+    padding: 75px 0;
+    background-color: gray;
+}
+
+#container {
+    background-color: #0a0a0a;
+    border-radius: 25px;
+    margin: 0 75px;
+    min-height: 100vh;
+    place-items: center;
+    color: gainsboro;
+}
+
+main h2 {
+    font-weight: 500;
+    font-size: 45px;
+    text-align: center;
+}
+
+main p {
+    align-items: center;
+    text-align: center;
+    max-width: 50ch;
+}
+
+#team-container {
+
+}
+
+#team-icon {
+
+}
+
+footer {
+    background-color: black;
+    padding: 15px 0;
+    opacity: .8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
