@@ -11,6 +11,7 @@
     --bg-card: #1a1a2e;
     --text-primary: #ffffff;
     --text-secondary: #f4f4f5;
+    --text-tertiary: #8a8af4;
     --text-accent-light: #98c2eb;
     --text-accent-dark: #89b0da;
     --border-color: #2a2a3e;
@@ -366,6 +367,26 @@ main {
     color: var(--text-secondary);
     font-size: 0.9rem;
     line-height: 1.5;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px; 
+    justify-content: center;
+}
+
+.email a {
+    color: var(--text-tertiary) !important;
+    font-size: 0.8rem;
+}
+
+.email-icon {
+    width: 18px;
+    height: 18px;
+    top: 3px;
+    position: relative;
 }
 
 .contact-info {
