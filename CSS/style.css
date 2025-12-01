@@ -380,7 +380,7 @@ main {
 .email a {
     color: var(--text-tertiary) !important;
     font-size: 0.8rem;
-    cursor: alias;
+    cursor: alias !important;
 }
 
 .email-icon {
