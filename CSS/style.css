@@ -136,6 +136,10 @@ main {
     color: white;
 }
 
+#project a{
+    color: var(--text-accent-dark);
+}
+
 .project-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -247,6 +251,33 @@ main {
     font-size: 1.2rem;
     color: var(--text-accent-dark);
     font-weight: 600;
+}
+
+.methodology-container p strong {
+    color: var(--text-accent-dark);
+}
+
+.literature-questions {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #bdc6fa;
+}
+
+.literature-questions li {
+    list-style-type: none;
+    border-radius: var(--border-radius);
+    padding: 3px;
+    margin: 3px 0;
+    border: 1px solid var(--border-color);
+}
+
+.literature-questions li:hover {
+    cursor: default;
+    border-color: var(--text-accent-light);
+    transform: translateY(-3px);
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(91, 159, 227, 0.3);
 }
 
 .carousel-container {
