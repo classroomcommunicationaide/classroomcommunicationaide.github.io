@@ -1,3 +1,5 @@
+document.getElementById("year").textContent = new Date().getFullYear();
+
 document.addEventListener("DOMContentLoaded", () => {
     const sections = [...document.querySelectorAll("section[id]")];
     const navLinks = [...document.querySelectorAll("nav a")];
