@@ -1,5 +1,3 @@
-document.getElementById("year").textContent = new Date().getFullYear();
-
 document.addEventListener("DOMContentLoaded", () => {
     const sections = [...document.querySelectorAll("section[id]")];
     const navLinks = [...document.querySelectorAll("nav a")];
@@ -24,6 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener("scroll", updateActive);
     updateActive();
+
+    document.getElementById("year").textContent = new Date().getFullYear();
 });
 
 function createCarousel(containerId, imagePaths, intervalTime = 5000) {
