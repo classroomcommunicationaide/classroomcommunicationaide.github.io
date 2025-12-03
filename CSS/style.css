@@ -226,6 +226,134 @@ main {
     line-height: 1.6;
 }
 
+.methodology-container {
+    background: var(--bg-card);
+    border-radius: var(--border-radius);
+    padding: 35px;
+    margin: 35px 0;
+    border: 1px solid var(--border-color);
+}
+
+.methodology-container h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+    color: var(--text-accent-dark);
+    font-weight: 600;
+}
+
+.methodology-container h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-accent-dark);
+    font-weight: 600;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    overflow: hidden;
+    background: var(--bg-card);
+    border: 2px solid var(--bg-dark);
+    border-radius: var(--border-radius);
+    margin: 10px auto;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel-container img.active {
+    display: block;
+    animation: fade 0.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+    z-index: 1000;
+}
+
+.arrow:hover {
+    background-color: var(--bg-card);
+}
+
+.arrow.left { 
+    left: 10px; 
+}
+
+.arrow.right { 
+    right: 10px; 
+}
+
+.dots {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    z-index: 1000;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.dot.active {
+    width: 40px;
+    border-radius: 20px;
+    background: linear-gradient(to right, var(--text-accent-light) var(--progress, 0%), #ccc 0%);
+    transition: width 0.3s;
+}
+
+.dot:hover {
+    background: var(--text-accent-dark);
+    cursor: pointer;
+}
+
+.carousel-container .arrow,
+.carousel-container .dots {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-container:hover .arrow,
+.carousel-container:hover .dots {
+    opacity: 1;
+}
+
 .tech-stack {
     background: var(--bg-card);
     border-radius: var(--border-radius);
