@@ -704,7 +704,7 @@ footer p {
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         -ms-overflow-style: none;
-        padding: 6px 10px;
+        padding: 0px 10px;
         margin: 0;
         width: 100%;
         max-width: 100%;
@@ -713,6 +713,9 @@ footer p {
         background: rgba(0, 0, 0, 0.08);
         border-radius: 6px;
         align-self: center;
+        display: flex;
+        align-items: center;
+        min-height: 40px;
     }
 
     .nav-links::-webkit-scrollbar {
@@ -720,13 +723,15 @@ footer p {
     }
 
     nav a {
-        padding: 6px 14px;
+        padding: 8px 14px;
         font-size: 0.85rem;
         white-space: nowrap;
         flex-shrink: 0;
         scroll-snap-align: center;
         border-radius: 6px;
         transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
     }
 
     nav a:hover {
