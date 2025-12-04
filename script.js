@@ -175,12 +175,12 @@ createTextCarousel('textCarousel', [
     {
         title: "The Effects of Multi-Sensory Augmented Reality on Students’ Motivation in English Language Learning",
         link: "https://ieeexplore.ieee.org/document/8725096",
-        desc: "Our project deals with improving the integration of English language learners in the classroom and handles essential real-time communication with their teachers. Designing our project’s features in a way that naturally lends to improving language acquisition is in alignment with our end goal and would be helpful to our users. The findings in the paper give us some great clues about the importance of including both visual text and auditory elements in our design. Additionally, the paper brings up a novel tool (augmented reality) and describes how it can be used to supplement teacher instruction."
+        desc: "Designing our project’s features in a way that naturally lends to language acquisition is in alignment with our end goal. The findings in the paper give us some great clues about the importance of including both visual text and auditory elements in our design. Additionally, the paper brings up a novel tool (augmented reality) and describes how it can be used to supplement teacher instruction."
     },
     {
         title: "Mobile Translation Apps. and Second Language Teaching; What do Students think?",
         link: "https://ieeexplore.ieee.org/document/9105728",
-        desc: "Translated text and translation features are two elements that could potentially be very helpful to incorporate for our users and their feelings of belongingness and understanding in class. At the same time, it is a valid concern that our project could potentially become a crutch and inhibit the natural acquisition of a language for our young users. This paper provides support for incorporating translation features into our web app solution, and backs the idea that it could be more helpful than harmful for students with a low level of language ability (which is exactly our target type of user)."
+        desc: "Translation features can be helpful to include for our users and their feelings of belongingness and understanding in class. At the same time, it is a valid concern that too much translation aid can inhibit the natural acquisition of a language for our young users. This paper provides support for incorporating translation features into our web app solution, and backs the idea that it could be more helpful than harmful for students with a low level of language skill."
     },
     {
         title: "Augmentative and Alternative Communication in an Elementary School Setting: A Case Study",
