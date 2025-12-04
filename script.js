@@ -165,13 +165,13 @@ createImageCarousel('User-Study-Carousel', [
 
 function createTextCarousel(id, papers, intervalTime = 8000) {
     createCarouselBase(id, papers, (paper) => `
-        <h2 class="paper-title">${paper.title}</h2>
+        <h3 class="paper-title">${paper.title}</h3>
         <a href="${paper.link}" target="_blank" class="paper-link">🔗 View Paper</a>
         <p class="paper-desc">${paper.desc}</p>
     `, intervalTime);
 }
 
-createTextCarousel('textCarousel', [
+createTextCarousel('Text-Carousel', [
     {
         title: "The Effects of Multi-Sensory Augmented Reality on Students’ Motivation in English Language Learning",
         link: "https://ieeexplore.ieee.org/document/8725096",
@@ -191,6 +191,26 @@ createTextCarousel('textCarousel', [
         title: "Effect of mobile technology featuring visual scene displays and just-in-time programming on communication turns by preadolescent and adolescent beginning communicators",
         link: "https://www.tandfonline.com/doi/full/10.1080/17549507.2018.1441440",
         desc: "The paper emphasizes visual interfaces and the rapid creation of context relevant supports: the study’s visual scene displays (VSDs) and just-in-time (JIT) programming map directly to our large icon buttons, rapid shortcut creation, and teacher dashboard. By leveraging immediacy, meaningful visuals, and teacher mediated support, our design should promote faster, more confident student to teacher interactions."
+    },
+    {
+        title: "The impact of Integrated Learning Apps on Oral Proficiency Development in Chinese EFL Learners",
+        link: "https://ieeexplore.ieee.org/document/11113597",
+        desc: "put here"
+    },
+    {
+        title: "ICT tools’ contributions in a technology-enhanced peer learning program involving EFL learners",
+        link: "https://ieeexplore.ieee.org/document/9499949",
+        desc: "put here"
+    },
+    {
+        title: "EFL Students’ Perceptions on the Use of Booklet in Grammar Classes",
+        link: "https://dl.acm.org/doi/10.1145/3606094.3606117",
+        desc: "put here"
+    }, 
+    {
+        title: "Enhancing Grammar Learning for ESL Primary School Students through a Game-Based Response System",
+        link: "https://ieeexplore.ieee.org/document/10868919",
+        desc: "put here"
     }
 ]);
 
