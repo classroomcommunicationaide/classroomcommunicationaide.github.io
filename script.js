@@ -1,10 +1,33 @@
+
 document.addEventListener("DOMContentLoaded", () => {
+
+    // Navigation horizontal scroll for mobile
+    const navLinksContainer = document.querySelector('.nav-links');
+    const navLeftArrow = document.querySelector('nav .arrow.left');
+    const navRightArrow = document.querySelector('nav .arrow.right');
+
+    if (navLeftArrow && navRightArrow && navLinksContainer) {
+        navLeftArrow.addEventListener('click', () => {
+            navLinksContainer.scrollBy({
+                left: -200,
+                behavior: 'smooth'
+            });
+        });
+
+        navRightArrow.addEventListener('click', () => {
+            navLinksContainer.scrollBy({
+                left: 200,
+                behavior: 'smooth'
+            });
+        });
+    }
+
     const sections = [...document.querySelectorAll("section[id]")];
     const navLinks = [...document.querySelectorAll("nav a")];
 
     function updateActive() {
         let currentSection = sections[0].id;
-        
+
         sections.forEach(section => {
             const rect = section.getBoundingClientRect();
 
@@ -13,10 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        // Update highlight
+        // Update  and scroll active link into view
         navLinks.forEach(link => {
             const isActive = link.getAttribute("href") === `#${currentSection}`;
             link.classList.toggle("active", isActive);
+            if (isActive && window.innerWidth <= 900) {
+                link.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'nearest',
+                    inline: 'center'
+                });
+            }
         });
     }
 
@@ -214,21 +244,3 @@ createTextCarousel('Text-Carousel', [
     }
 ]);
 
-function createSystemCarousel(id, systems, intervalTime = 8000) {
-    createCarouselBase(id, systems, (system) => `
-        <h3 class="system-title"><a href="${system.link}" target="_blank" class="system-link">${system.title1}</a></h3>
-        <h3 class="system-title"><a href="${system.link}" target="_blank" class="system-link">${system.title1}</a></h3>
-        <p class="system-desc">${system.desc}</p>
-    `, intervalTime);
-}
-
-createSystemCarousel('System-Carousel', [
-    {
-        link1: "https://www.classdojo.com/",
-        title1: "ClassDojo",
-        link1: "https://www.classdojo.com/",
-        title1: "ClassDojo",
-        desc: "hi"
-    }
-
-]);
