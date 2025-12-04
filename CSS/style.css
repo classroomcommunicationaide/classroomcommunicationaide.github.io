@@ -251,6 +251,7 @@ main {
     font-size: 1.2rem;
     color: var(--text-accent-dark);
     font-weight: 600;
+    margin-top: 20px;
 }
 
 .methodology-container p strong {
@@ -293,14 +294,71 @@ main {
     margin: 10px auto;
 }
 
-.carousel-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: none;
+.carousel-container .slide {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.carousel-container .slide.active {
+    display: block;
+}
+
+#textCarousel .slide {
+    overflow-y: auto;
+    padding: 20px; 
+    padding-right: 14px; 
+    padding-bottom: 18px;
+    box-sizing: border-box;
+}
+
+#textCarousel .slide::-webkit-scrollbar {
+    width: 8px;
+}
+
+#textCarousel .slide::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: var(--border-radius);
+}
+
+#textCarousel .slide::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.paper-title {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: var(--text-accent-dark);
+    font-weight: 700;
+}
+
+.paper-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--text-accent-light);
+    font-weight: 600;
+}
+
+.paper-link:hover {
+    color: var(--text-accent-dark);
+}
+
+.paper-desc {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.carousel-container .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .carousel-container img.active {
@@ -324,7 +382,7 @@ main {
     transform: translateY(-50%);
     font-size: 30px;
     color: white;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
