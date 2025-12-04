@@ -214,3 +214,21 @@ createTextCarousel('Text-Carousel', [
     }
 ]);
 
+function createSystemCarousel(id, systems, intervalTime = 8000) {
+    createCarouselBase(id, systems, (system) => `
+        <h3 class="system-title"><a href="${system.link}" target="_blank" class="system-link">${system.title1}</a></h3>
+        <h3 class="system-title"><a href="${system.link}" target="_blank" class="system-link">${system.title1}</a></h3>
+        <p class="system-desc">${system.desc}</p>
+    `, intervalTime);
+}
+
+createSystemCarousel('System-Carousel', [
+    {
+        link1: "https://www.classdojo.com/",
+        title1: "ClassDojo",
+        link1: "https://www.classdojo.com/",
+        title1: "ClassDojo",
+        desc: "hi"
+    }
+
+]);
