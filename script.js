@@ -244,3 +244,73 @@ createTextCarousel('Text-Carousel', [
     }
 ]);
 
+function createTextCarousel(id, papers, intervalTime = 8000) {
+    createCarouselBase(id, papers, (paper) => `
+        <h3 class="paper-title">${paper.title}</h3>
+        <a href="${paper.link}" target="_blank" class="paper-link">🔗 View Paper</a>
+        <p class="paper-desc">${paper.desc}</p>
+    `, intervalTime);
+}
+
+createTextCarousel('Text-Carousel', [
+    {
+        title: "The Effects of Multi-Sensory Augmented Reality on Students’ Motivation in English Language Learning",
+        link: "https://ieeexplore.ieee.org/document/8725096",
+        desc: "Designing our project’s features in a way that naturally lends to language acquisition is in alignment with our end goal. The findings in the paper give us some great clues about the importance of including both visual text and auditory elements in our design. Additionally, the paper brings up a novel tool (augmented reality) and describes how it can be used to supplement teacher instruction."
+    },
+    {
+        title: "Mobile Translation Apps. and Second Language Teaching; What do Students think?",
+        link: "https://ieeexplore.ieee.org/document/9105728",
+        desc: "Translation features can be helpful to include for our users and their feelings of belongingness and understanding in class. At the same time, it is a valid concern that too much translation aid can inhibit the natural acquisition of a language for our young users. This paper provides support for incorporating translation features into our web app solution, and backs the idea that it could be more helpful than harmful for students with a low level of language skill."
+    },
+    {
+        title: "Augmentative and Alternative Communication in an Elementary School Setting: A Case Study",
+        link: "https://doi.org/10.1044/2021_LSHSS-21-00052",
+        desc: "The paper’s naturalistic observations of when, where, and why AAC is used highlight real limitations, such as reliance on fixed command sets, that directly inform our design. By providing large, visual, customizable shortcut buttons and real time teacher notifications, our web app addresses those gaps and supports more consistent, classroom-centered communication."
+    },
+    {
+        title: "Effect of mobile technology featuring visual scene displays and just-in-time programming on communication turns by preadolescent and adolescent beginning communicators",
+        link: "https://www.tandfonline.com/doi/full/10.1080/17549507.2018.1441440",
+        desc: "The paper emphasizes visual interfaces and the rapid creation of context relevant supports: the study’s visual scene displays (VSDs) and just-in-time (JIT) programming map directly to our large icon buttons, rapid shortcut creation, and teacher dashboard. By leveraging immediacy, meaningful visuals, and teacher mediated support, our design should promote faster, more confident student to teacher interactions."
+    },
+    {
+        title: "The impact of Integrated Learning Apps on Oral Proficiency Development in Chinese EFL Learners",
+        link: "https://ieeexplore.ieee.org/document/11113597",
+        desc: "put here"
+    },
+    {
+        title: "ICT tools’ contributions in a technology-enhanced peer learning program involving EFL learners",
+        link: "https://ieeexplore.ieee.org/document/9499949",
+        desc: "put here"
+    },
+    {
+        title: "EFL Students’ Perceptions on the Use of Booklet in Grammar Classes",
+        link: "https://dl.acm.org/doi/10.1145/3606094.3606117",
+        desc: "put here"
+    }, 
+    {
+        title: "Enhancing Grammar Learning for ESL Primary School Students through a Game-Based Response System",
+        link: "https://ieeexplore.ieee.org/document/10868919",
+        desc: "put here"
+    }
+]);
+
+function createSystemCarousel(id, systems, intervalTime = 8000) {
+    createCarouselBase(id, systems, (system) => `
+        <h3 class="system-title"><a href="${system.link}" target="_blank" class="system-link">${system.title1}</a></h3>
+        <h3 class="system-title"><a href="${system.link}" target="_blank" class="system-link">${system.title1}</a></h3>
+        <p class="system-desc">${system.desc}</p>
+    `, intervalTime);
+}
+
+createSystemCarousel('System-Carousel', [
+    {
+        link1: "https://www.classdojo.com/",
+        title1: "ClassDojo",
+        link1: "https://www.classdojo.com/",
+        title1: "ClassDojo",
+        desc: "hi"
+    }
+
+]);
+
