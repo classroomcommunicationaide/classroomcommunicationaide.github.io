@@ -202,6 +202,7 @@ function createTextCarousel(id, papers, intervalTime = 8000) {
 }
 
 createTextCarousel('Text-Carousel', [
+    // Diana
     {
         title: "The Effects of Multi-Sensory Augmented Reality on Students’ Motivation in English Language Learning",
         link: "https://ieeexplore.ieee.org/document/8725096",
@@ -212,6 +213,7 @@ createTextCarousel('Text-Carousel', [
         link: "https://ieeexplore.ieee.org/document/9105728",
         desc: "Translation features can be helpful to include for our users and their feelings of belongingness and understanding in class. At the same time, it is a valid concern that too much translation aid can inhibit the natural acquisition of a language for our young users. This paper provides support for incorporating translation features into our web app solution, and backs the idea that it could be more helpful than harmful for students with a low level of language skill."
     },
+    // Ziming
     {
         title: "Augmentative and Alternative Communication in an Elementary School Setting: A Case Study",
         link: "https://doi.org/10.1044/2021_LSHSS-21-00052",
@@ -222,26 +224,28 @@ createTextCarousel('Text-Carousel', [
         link: "https://www.tandfonline.com/doi/full/10.1080/17549507.2018.1441440",
         desc: "The paper emphasizes visual interfaces and the rapid creation of context-relevant supports: the study’s visual scene displays (VSDs) and just-in-time (JIT) programming map directly to our large icon buttons, rapid shortcut creation, and teacher dashboard. By leveraging immediacy, meaningful visuals, and teacher-mediated support, our design should promote faster, more confident student-to-teacher interactions."
     },
+    // Jonah
     {
         title: "Envisioning Support-Centered Technologies for Language Practice and Use: Needs and Design Opportunities for Immigrant English Language Learners (ELLs)",
         link: "https://dl.acm.org/doi/10.1145/3613904.3642236",
-        desc: "This paper discusses the issue of anxiety and shame about one’s English proficiency was one of the main struggles ELL students reported on. This anxiety would affect ELL students leading up to, during, and after conversation, and often lead students to hesitate to participate in future conversations and reinforce their perceived inadequacy. This is important because it shows the lack of in class support can cause students to fall behind and become comfortable not asking for help. As such, there is a clear need for support tools that facilitate signaling for help and reduce the anxiety and shame of the ELL student in need. On language acquisition, use in a classroom, and developing habitual language learning, they outlined important design considerations that are useful as well, such as the importance of visuals elements, ease of use and accessibility, as well as positive reinforcement."
+        desc: "This paper discusses the issue of anxiety and shame about one’s English proficiency was one of the main struggles ELL students reported on. This anxiety would affect ELL students leading up to, during, and after conversation, and often lead students to hesitate to participate in future conversations and reinforce their perceived inadequacy. This is important because it shows the lack of in class support can cause students to fall behind and become comfortable not asking for help. As such, there is a clear need for support tools that facilitate signaling for help and reduce the anxiety and shame of the ELL student in need. On language acquisition, use in a classroom, and developing habitual language learning, they outlined important design considerations that are useful as well, such as the "
     },
     {
-        title: "ICT tools’ contributions in a technology-enhanced peer learning program involving EFL learners",
-        link: "https://ieeexplore.ieee.org/document/9499949",
-        desc: "put here"
+        title: "The Impact of Integrated Learning Apps on Oral Proficiency Development in Chinese EFL Learners",
+        link: "https://ieeexplore.ieee.org/document/11113597",
+        desc: "The use of oral exercises is important to not develop “mute english”. Our design should incorporate audio and visual feedback to increase the comprehensible input for language learners. Other gamified tasks can help supplement student’s language learning, and personalize their learning to their level and pace. Also, the gamification of learning can be a useful tool for motivating students to learn, and provides an easy way to track progress for students and teachers."
     },
-    {
-        title: "EFL Students’ Perceptions on the Use of Booklet in Grammar Classes",
-        link: "https://dl.acm.org/doi/10.1145/3606094.3606117",
-        desc: "put here"
-    }, 
+    // Kyle
     {
         title: "Enhancing Grammar Learning for ESL Primary School Students through a Game-Based Response System",
         link: "https://ieeexplore.ieee.org/document/10868919",
-        desc: "put here"
-    }
+        desc: "This research analyzed how game based systems like Kahoot! can be used in a primary school classroom to help ESLs with learning grammar. They found that due to the increased engagement, these platforms boosted learning when compared to students who learned using traditional methods."
+    },
+    {
+        title: "Designing a Visual Interface for Elementary Students to Formulate AI Planning Tasks",
+        link: "https://ieeexplore.ieee.org/document/9576163",
+        desc: "This paper researches AI integration using an AI Agent to create useful plans given problems within the context of a K-12 classroom, specifically focused on grades 3-5. The researchers focused on creating a visual interface that will cater specifically to K-12 learners, as well as integrating a game-based learning environment to increase engagement."
+    },
 ]);
 
 function createSystemCarousel(id, systems, intervalTime = 8000) {
@@ -253,6 +257,7 @@ function createSystemCarousel(id, systems, intervalTime = 8000) {
 }
 
 createSystemCarousel('System-Carousel', [
+    // Diana
     {
         name1: "ClassDojo",
         link1: "https://www.classdojo.com/",
@@ -260,6 +265,7 @@ createSystemCarousel('System-Carousel', [
         link2: "https://translator.microsoft.com/",
         desc: "From our analysis, we learned how to design a clean, intuitive interface designed for young students and educators (as demonstrated by <strong>ClassDojo</strong>). We created our translator design by testing existing translators (e.g., <strong>Microsoft Translator</strong>) and identifying the most helpful features."
     },
+    // Ziming
     {
         name1: "TurnoClase",
         link1: "https://turnoclase.com/",
@@ -267,19 +273,21 @@ createSystemCarousel('System-Carousel', [
         link2: "https://www.mycoughdrop.com/",
         desc: "We learned from <strong>TurnoClase</strong> that it is important to allow teachers to add new classroom sections. Including a feature that allows teachers to easily switch between classes will make our final project more practical and user-friendly on the teacher’s side. We learned from <strong>CoughDrop</strong> that it is important to allow users to modify the default button text. This feature increases flexibility by letting users customize buttons to match their personal communication needs or express themselves in a more natural way."
     },
+    // Kyle
+    {
+        name1: "ParentSquare",
+        link1: "https://www.parentsquare.com/",
+        name2: "School Status",
+        link2: "https://www.g2.com/products/schoolstatus/reviews",
+        desc: "<strong>ParentSquare</strong> did well on designing their interface and features from a student and teacher first perspective. They include two-way translation, and allow message sending between students and teachers. <strong>Student Status</strong> used data visualizations to provide powerful insights to parents regarding a students performance and attendance. Overall their user interface design catered well to each class of user they developed their application for."
+    },
+    // Jonah
     {
         name1: "Proloquo2Go",
         link1: "https://apps.apple.com/us/app/proloquo2go-aac/id308368164",
         name2: "Read&Write",
         link2: "https://www.texthelp.com/products/read-and-write-education/",
         desc: "For the design, we learned from <strong>Proloquo2Go</strong> that having an organized and simple layout, with clearly colored and labeled buttons and easily identifiable pictures, is essential to the usage of the app, especially for crosslinguistic communication. From <strong>Read&Write</strong>, we learned that a simple, straightforward design that people can understand just from looking at is essential, both for usability and for visual communication. As for features, the ability to say the sentence out loud in <strong>Proloquo2Go</strong> is nice and could be beneficial for practicing hearing and saying common English sentences."
-    },
-    {
-        name1: "System name 1",
-        link1: "System 1 link",
-        name2: "System name 2",
-        link2: "System 2 link",
-        desc: "content"
     }
 ]);
 
