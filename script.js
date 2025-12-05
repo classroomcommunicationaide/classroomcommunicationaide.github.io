@@ -279,7 +279,7 @@ createSystemCarousel('System-Carousel', [
         link1: "https://www.parentsquare.com/",
         name2: "School Status",
         link2: "https://www.g2.com/products/schoolstatus/reviews",
-        desc: "<strong>ParentSquare</strong> did well on designing their interface and features from a student and teacher first perspective. They include two-way translation, and allow message sending between students and teachers. <strong>Student Status</strong> used data visualizations to provide powerful insights to parents regarding a students performance and attendance. Overall their user interface design catered well to each class of user they developed their application for."
+        desc: "<strong>ParentSquare</strong> did well on designing their interface and features from a student and teacher first perspective. They include two-way translation, and allow message sending between students and teachers. <strong>School Status</strong> used data visualizations to provide powerful insights to parents regarding a students performance and attendance. Overall their user interface design catered well to each class of user they developed their application for."
     },
     // Jonah
     {
