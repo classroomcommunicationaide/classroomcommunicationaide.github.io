@@ -710,23 +710,20 @@ footer p {
         padding: 8px 5px;
         position: fixed;
         overflow: hidden;
-        display: grid;
-        grid-template-columns: 50px 1fr 50px;
-        grid-template-rows: 1fr;
+        display: flex;
         align-items: center;
-        gap: 5px;
+        justify-content: center;
+        gap: 8px;
         height: auto;
         min-height: 56px;
+        width: 100%;
     }
 
     nav h1 {
         display: none !important;
-        grid-column: 1 / -1;
     }
 
     .nav-links {
-        grid-column: 2;
-        grid-row: 1;
         gap: 10px;
         overflow-x: auto;
         overflow-y: hidden;
@@ -735,17 +732,17 @@ footer p {
         scrollbar-width: none;
         -ms-overflow-style: none;
         padding: 0px 10px;
-        margin: 0;
+        margin: 0 40px;
         width: 100%;
         max-width: 100%;
         scroll-snap-type: x proximity;
         justify-content: flex-start;
         background: rgba(0, 0, 0, 0.08);
         border-radius: 6px;
-        align-self: center;
         display: flex;
         align-items: center;
         min-height: 40px;
+        flex: 1;
     }
 
     .nav-links::-webkit-scrollbar {
@@ -769,7 +766,6 @@ footer p {
     }
 
     nav .arrow {
-        position: relative !important;
         display: flex !important;
         align-items: center;
         justify-content: center;
@@ -784,20 +780,16 @@ footer p {
         cursor: pointer;
         user-select: none;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-        margin: 0 auto;
         transition: all 0.2s ease;
-        align-self: center;
         flex-shrink: 0;
     }
 
     nav .arrow.left {
-        grid-column: 1;
-        grid-row: 1;
+        order: 0;
     }
 
     nav .arrow.right {
-        grid-column: 3;
-        grid-row: 1;
+        order: 2;
     }
 
     nav .arrow.left:hover,
