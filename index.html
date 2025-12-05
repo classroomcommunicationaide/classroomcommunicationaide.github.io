@@ -39,8 +39,8 @@
                 <section id="project" class="content-section">
                     <h2>The Project</h2>
                     <p>
-                        The Classroom Communication Aide is an academic project developed as part of CSCI 436/536: Technology for Social Good 
-                        at Western Washington University. The class was teached by Dr. Shameem Ahmed in Fall 2025. Our mission is to create an ICT to address <a href="https://sdgs.un.org/goals/goal4" target="_blank">SDG 4</a> by bridging the communication gap between multilingual 
+                        The Classroom Communication Aide is an academic project developed CSCI 436/536: Technology for Social Good 
+                        at Western Washington University. The class was taught by Dr. Shameem Ahmed in Fall 2025. Our mission is to create an ICT to address <a href="https://sdgs.un.org/goals/goal4" target="_blank">SDG 4</a> by bridging the communication gap between multilingual 
                         K-12 learners and their educators.
                     </p>
                     <div class="project-stats">
@@ -92,9 +92,30 @@
                     <h2>Our Solution</h2>
                     <p>
                         We decided to develop an accessible web application that could be used across a wide range of devices. We developed our solution to focus on using
-                        visual aids, to begin introducing the association between objects and their pronounciations. We focused on improving the interactions between multilingual 
-                        students and their teachers, as we decided to implement real time two-way translaton to help facilitate communications.
+                        visual aids, to begin introducing the association between objects and their pronunciations. We focused on improving the interactions between multilingual 
+                        students and their teachers, as we decided to implement real time two-way translation to help facilitate communications.
                     </p>
+
+                    <p>
+                        Our application will support essential requests such as "I need water" or "I don't understand" with the use of visual aids to help student build language association.
+                        We will create a default set of these requests to ensure
+                        a clear signal can be sent to the teachers end of the application to resolve. Teachers will have the ability to prepare and share specific materials for
+                        ELLs, create shortcut sets for different classroom activities, and receive notifications when a student needs assistance.
+                    </p>
+
+                    <p>
+                        Our solution will differ from existing ones as we will have extensive support for language translation when needed. Many existing solutions exist that allow
+                        a student teacher connection for sending requests, but generally lack integrated translation tools for one-on-one interaction between the student and teacher.
+                    </p>
+
+                    <p>
+                        We focused on developing a web application as opposed to a native application as one of our main goals was compatibility. Further, a website would be the most simple solution
+                        to host and manage as we would not need to work on developing an application to reach an app store. We used a suite of <a href="#implementation">technologies</a> that our team was 
+                        familiar with and we felt would best fit the needs of our application. We developed with HTML, CSS, JS specifically using React and Tailwind for a fast
+                        component based user interface. For message communication we used WebSockets for low latency and notifications.
+                        Our backend API is implemented with Node.js to handle our business logic and integrations, with Supabase to host our PostgreSQL database and manage user authentication.
+                    </p>
+
                     <div class="features-grid">
                         <div class="feature-card">
                             <h3 class="">Compatible Design</h3>
@@ -106,7 +127,7 @@
                         </div>
                         <div class="feature-card">
                             <h3>Two-Way Translation</h3>
-                            <p>Students and teachers can communicate, each in their native langauge, promoting genuine dialogue</p>
+                            <p>Students and teachers can communicate, each in their native language, promoting genuine dialogue</p>
                         </div>
                     </div>
                 </section>
