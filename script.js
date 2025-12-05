@@ -218,14 +218,14 @@ createTextCarousel('Text-Carousel', [
         desc: "The paper’s naturalistic observations of when, where, and why AAC is used highlight real limitations, such as reliance on fixed command sets, that directly inform our design. By providing large, visual, customizable shortcut buttons and real-time teacher notifications, our web app addresses those gaps and supports more consistent, classroom-centered communication."
     },
     {
-        title: "Effect of mobile technology featuring visual scene displays and just-in-time programming on communication turns by preadolescent and adolescent beginning communicators",
+        title: "Effect of Mobile Technology Featuring Visual Scene Displays and Just-in-Time Programming on Communication Turns by Preadolescent and Adolescent Beginning Communicators",
         link: "https://www.tandfonline.com/doi/full/10.1080/17549507.2018.1441440",
         desc: "The paper emphasizes visual interfaces and the rapid creation of context-relevant supports: the study’s visual scene displays (VSDs) and just-in-time (JIT) programming map directly to our large icon buttons, rapid shortcut creation, and teacher dashboard. By leveraging immediacy, meaningful visuals, and teacher-mediated support, our design should promote faster, more confident student-to-teacher interactions."
     },
     {
-        title: "The impact of Integrated Learning Apps on Oral Proficiency Development in Chinese EFL Learners",
-        link: "https://ieeexplore.ieee.org/document/11113597",
-        desc: "put here"
+        title: "Envisioning Support-Centered Technologies for Language Practice and Use: Needs and Design Opportunities for Immigrant English Language Learners (ELLs)",
+        link: "https://dl.acm.org/doi/10.1145/3613904.3642236",
+        desc: "This paper discusses the issue of anxiety and shame about one’s English proficiency was one of the main struggles ELL students reported on. This anxiety would affect ELL students leading up to, during, and after conversation, and often lead students to hesitate to participate in future conversations and reinforce their perceived inadequacy. This is important because it shows the lack of in class support can cause students to fall behind and become comfortable not asking for help. As such, there is a clear need for support tools that facilitate signaling for help and reduce the anxiety and shame of the ELL student in need. On language acquisition, use in a classroom, and developing habitual language learning, they outlined important design considerations that are useful as well, such as the importance of visuals elements, ease of use and accessibility, as well as positive reinforcement."
     },
     {
         title: "ICT tools’ contributions in a technology-enhanced peer learning program involving EFL learners",
@@ -268,11 +268,11 @@ createSystemCarousel('System-Carousel', [
         desc: "We learned from <strong>TurnoClase</strong> that it is important to allow teachers to add new classroom sections. Including a feature that allows teachers to easily switch between classes will make our final project more practical and user-friendly on the teacher’s side. We learned from <strong>CoughDrop</strong> that it is important to allow users to modify the default button text. This feature increases flexibility by letting users customize buttons to match their personal communication needs or express themselves in a more natural way."
     },
     {
-        name1: "System name 1",
-        link1: "System 1 link",
-        name2: "System name 2",
-        link2: "System 2 link",
-        desc: "content"
+        name1: "Proloquo2Go",
+        link1: "https://apps.apple.com/us/app/proloquo2go-aac/id308368164",
+        name2: "Read&Write",
+        link2: "https://www.texthelp.com/products/read-and-write-education/",
+        desc: "For the design, we learned from <strong>Proloquo2Go</strong> that having an organized and simple layout, with clearly colored and labeled buttons and easily identifiable pictures, is essential to the usage of the app, especially for crosslinguistic communication. From <strong>Read&Write</strong>, we learned that a simple, straightforward design that people can understand just from looking at is essential, both for usability and for visual communication. As for features, the ability to say the sentence out loud in <strong>Proloquo2Go</strong> is nice and could be beneficial for practicing hearing and saying common English sentences."
     },
     {
         name1: "System name 1",
@@ -284,6 +284,15 @@ createSystemCarousel('System-Carousel', [
 ]);
 
 createImageCarousel('Final-Product-Carousel', [
-    'img/final_product/01_student_default_page.png',
-    'img/final_product/02_teacher_default_page.png',
+    'img/final_product/01_project_landing_page.png',
+    'img/final_product/02_project_register_page.png',
+    'img/final_product/03_student_login_page.png',
+    'img/final_product/04_teacher_login_page.png',
+    'img/final_product/05_student_default_page.png',
+    'img/final_product/06_student_edit_cmds.png',
+    'img/final_product/07_student_translator_page.png',
+    'img/final_product/08_teacher_default_page.png',
+    'img/final_product/09_teacher_all_student_page.png',
+    'img/final_product/10_teacher_add_class.png',
+    'img/final_product/11_teacher_custom_response_msg_page.png',
 ]);

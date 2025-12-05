@@ -72,7 +72,7 @@
                                 ELL's, but many do not. As a result students spend a majority of their time unassisted in a general classroom.
                             </p>
                             <p>
-                                As of fall 2021, there were 5.3 million ELL students, 10.6% of all students in the United States. Outside of the United States,
+                                As of fall 2021, there were <strong>5.3 million</strong> ELL students, <strong>10.6%</strong> of all students in the United States. Outside of the United States,
                                 there are a great number of students who deal with being native language learners. The frameworks for this project can be extended
                                 to provide solutions for education across the world.
                             </p>
@@ -101,7 +101,7 @@
                     </p>
 
                     <p>
-                        Our application will support essential requests such as "I need water" or "I don't understand" with the use of visual aids to help student build language association.
+                        Our application will support essential requests such as <strong>"I need water"</strong> or <strong>"I don't understand"</strong> with the use of visual aids to help student build language association.
                         We will create a default set of these requests to ensure
                         a clear signal can be sent to the teachers end of the application to resolve. Teachers will have the ability to prepare and share specific materials for
                         ELLs, create shortcut sets for different classroom activities, and receive notifications when a student needs assistance.
@@ -114,7 +114,7 @@
 
                     <p>
                         We focused on developing a web application as opposed to a native application as one of our main goals was compatibility. Further, a website would be the most simple solution
-                        to host and manage as we would not need to work on developing an application to reach an app store. We used a suite of <a href="#implementation">technologies</a> that our team was 
+                        to host and manage as we would not need to work on developing an application to reach an app store. We used a suite of <strong><a href="#implementation">technologies</a></strong> that our team was 
                         familiar with and we felt would best fit the needs of our application. We developed with HTML, CSS, JS specifically using React and Tailwind for a fast
                         component based user interface. For message communication we used WebSockets for low latency and notifications.
                         Our backend API is implemented with Node.js to handle our business logic and integrations, with Supabase to host our PostgreSQL database and manage user authentication.
@@ -154,7 +154,7 @@
                             <li>If you have to do the same research, how will you do it differently? Why?</li>
                        </div>
 
-                        <h4>Papers</h4>
+                        <h4>Papers (Findings)</h4>
                         <div class="carousel-container" id="Text-Carousel">
                             <div class="arrow left">&#10094;</div>
                             <div class="arrow right">&#10095;</div>
@@ -179,7 +179,7 @@
                             <li>If you have to implement the same system, how will you do it differently? Why?</li>
                             <li>What lessons have you learned from the system that may be useful for your final project? How?</li>
                         </div>
-                        <h4>Systems</h4>
+                        <h4>Systems (Findings)</h4>
                         <div class="carousel-container" id="System-Carousel">
                             <div class="arrow left">&#10094;</div>
                             <div class="arrow right">&#10095;</div>
@@ -207,6 +207,7 @@
                             <li>Beyond language barriers, ELL students may experience cultural barriers that can impact their feeling of belongingness or their connection to their teacher. Representation is an important thing to keep in mind.</li>
                             <li>School districts provide Google Chromebooks to students.</li>
                             <li>There are often hand signals used in class for needs to prevent interrupting the class.</li>
+                            <li>ELL students start at a wide variety of levels, from kids who have never been in school or know how to read in their native language, to those who learn fast. Their initial understanding, as well as how fast they learn English, is very different for every kid. Teachers must handle many different changing levels at once.</li>
                         </div>
                         <h4>Group Prototype</h4>
                         <div class="carousel-container" id="User-Study-Carousel">
@@ -224,7 +225,7 @@
                         <h3>Technology Stack</h3>
                         <div class="tech-grid">
                             <div class="tech-item">
-                                <strong>Frontend:</strong> React.js
+                                <strong>Frontend:</strong> React.js, Tailwind CSS
                             </div>
                             <div class="tech-item">
                                 <strong>Backend:</strong> Node.js
@@ -233,10 +234,10 @@
                                 <strong>Database:</strong> PostgreSQL
                             </div>
                             <div class="tech-item">
-                                <strong>Translation API:</strong> Microsoft Azure Translator
+                                <strong>Database Hosting:</strong> Supabase
                             </div>
                             <div class="tech-item">
-                                <strong>Hosting:</strong> Supabase
+                                <strong>Translation API:</strong> Microsoft Azure Translator
                             </div>
                         </div>
                     </div>
@@ -247,10 +248,13 @@
                                 <strong>Student Page:</strong><br>The main student page provides access to every feature that the student may need, all in one place. The activity header describes the current class activity and helps the student better understand what is going on around them. The command buttons allow the student to send basic needs requests directly to their teacher. They can add and edit the appearance of certain buttons using the edit button. The student can use also use the message bar to send a private and unique message to their teacher, and use the translator button to open up the translator page.
                             </div>
                             <div class="detail-item">
-                                <strong>Translator page:</strong><br>Allows students to translate between their language and their teacher's language. It allows them to input using speech and listen to the translation. There is a help button to explain how to use the features on that page in their own language.
+                                <strong>Translator Page:</strong><br>Allows students to translate between their language and their teacher's language. It allows them to input using speech and listen to the translation. There is a help button to explain how to use the features on that page in their own language.
                             </div>
                             <div class="detail-item">
-                                <strong>Teacher custom response message page:</strong><br>Allows teacher to reply to a request through a custom message. It will display the student name, requested test, request time, and date. Once typed the message is typed in the text box, the teacher can click send to send the message. The teacher will go back to the previous page once they click send, cancel, or the go back button.
+                                <strong>Teacher Page:</strong><br>Teachers will have a queue of incoming messages from students. They can quickly allow a request or send a response back. They can also set an activity status and subject, which is set on all students' pages. The teacher has sub pages where they can view and sort a log of all requests made in a class, and a student page that displays information about each student, including their language, what messages, and usage frequency. There’s also a profile page, where a teacher can register their class to get a unique class code for students to register with.
+                            </div>
+                            <div class="detail-item">
+                                <strong>Teacher Custom Response Message Page:</strong><br>Allows teacher to reply to a request through a custom message. It will display the student name, requested test, request time, and date. Once typed the message is typed in the text box, the teacher can click send to send the message. The teacher will go back to the previous page once they click send, cancel, or the go back button.
                             </div>
                         </div>
                         <br>

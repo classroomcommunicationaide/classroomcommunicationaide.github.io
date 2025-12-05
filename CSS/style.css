@@ -271,6 +271,9 @@ main {
     margin-top: 20px;
 }
 
+#problem p strong,
+#solution p strong,
+#solution p strong a,
 .methodology-container p strong,
 #Future-Work p strong {
     color: var(--text-accent-dark);
