@@ -3,7 +3,8 @@ import os
 folder_array = [
     "img/group_prototype/prototype_1",
     "img/group_prototype/prototype_2",
-    "img/group_prototype/prototype_3"
+    "img/group_prototype/prototype_3",
+    "img/final_product"
 ]
 
 # List and print image paths

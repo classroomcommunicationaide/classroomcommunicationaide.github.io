@@ -271,11 +271,13 @@ main {
     margin-top: 20px;
 }
 
-.methodology-container p strong {
+.methodology-container p strong,
+#Future-Work p strong {
     color: var(--text-accent-dark);
 }
 
-.list-questions {
+.list-questions,
+.user-study-list-findings {
     display: block;
     text-align: center;
     font-size: 0.9rem;
@@ -283,7 +285,8 @@ main {
     color: #bdc6fa;
 }
 
-.list-questions li {
+.list-questions li,
+.user-study-list-findings li {
     background: rgba(15, 15, 35, 0.5);
     list-style-type: none;
     border-radius: var(--border-radius);
@@ -292,7 +295,8 @@ main {
     border: 1px solid var(--border-color);
 }
 
-.list-questions li:hover {
+.list-questions li:hover,
+.user-study-list-findings li:hover {
     transition: all 0.3s ease;
     cursor: default;
     border-color: var(--text-accent-light);
@@ -307,7 +311,7 @@ main {
     max-width: 600px;
     height: 400px;
     overflow: hidden;
-    background: var(--bg-card);
+    background: rgba(15, 15, 35, 0.5);
     border: 2px solid var(--bg-dark);
     border-radius: var(--border-radius);
     margin: 10px auto;
@@ -326,7 +330,8 @@ main {
     display: block;
 }
 
-#Text-Carousel .slide {
+#Text-Carousel .slide,
+#System-Carousel .slide {
     overflow-y: auto;
     padding: 20px; 
     padding-right: 14px; 
@@ -334,16 +339,19 @@ main {
     box-sizing: border-box;
 }
 
-#Text-Carousel .slide::-webkit-scrollbar {
+#Text-Carousel .slide::-webkit-scrollbar, 
+#System-Carousel .slide::-webkit-scrollbar {
     width: 8px;
 }
 
-#Text-Carousel .slide::-webkit-scrollbar-thumb {
+#Text-Carousel .slide::-webkit-scrollbar-thumb,
+#System-Carousel .slide::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.08);
     border-radius: var(--border-radius);
 }
 
-#Text-Carousel .slide::-webkit-scrollbar-track {
+#Text-Carousel .slide::-webkit-scrollbar-track,
+#System-Carousel .slide::-webkit-scrollbar-track {
     background: transparent;
 }
 
@@ -372,6 +380,22 @@ main {
     display: block;
     color: var(--text-secondary);
     font-size: 0.95rem;
+}
+
+.system-name {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--text-accent-dark);
+    font-weight: 700;
+}
+
+#System-Carousel .system-link {
+    text-decoration: none;
+    color: var(--text-accent-dark);
+}
+
+#System-Carousel .system-link:hover {
+    color: var(--text-accent-light);
 }
 
 .carousel-container .slide img {
@@ -463,7 +487,8 @@ main {
     opacity: 1;
 }
 
-.tech-stack {
+.tech-stack,
+.final-product-container {
     background: var(--bg-card);
     border-radius: var(--border-radius);
     padding: 35px;
@@ -471,7 +496,8 @@ main {
     border: 1px solid var(--border-color);
 }
 
-.tech-stack h3 {
+.tech-stack h3,
+.final-product-container h3 {
     text-align: center;
     margin-bottom: 25px;
     font-size: 1.4rem;
@@ -479,7 +505,8 @@ main {
     font-weight: 600;
 }
 
-.tech-grid {
+.tech-grid,
+.product-detail-grid {
     cursor: pointer;
     text-align: center;
     display: flex;
@@ -489,7 +516,8 @@ main {
     margin: 0 auto;
 }
 
-.tech-item {
+.tech-item,
+.detail-item {
     background: rgba(15, 15, 35, 0.5);
     padding: 18px;
     border: 1px solid var(--border-color);
@@ -502,7 +530,8 @@ main {
     margin-top: -1px;
 }
 
-.tech-item:hover {
+.tech-item:hover,
+.detail-item:hover {
     border-color: var(--text-accent-light);
     transform: translateY(-5px);
     z-index: 10;
@@ -517,7 +546,8 @@ main {
     border-radius: 0 0 6px 6px;
 }
 
-.tech-item strong {
+.tech-item strong,
+.detail-item strong {
     color: var(--text-accent-dark);
     font-weight: 600;
 }
